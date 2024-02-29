@@ -82,7 +82,7 @@ const EmployeeList = () => {
           <Col md={3} xs={12} className="mb-md-0 mb-2 ">
             <Dropdown onSelect={handleRowsPerPageChange}>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Rows per page{rowsPerPage && ":" + " " + rowsPerPage}
+                Rows per page{rowsPerPage &&  rowsPerPage}
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 {[5, 10, 15, 20].map((option) => (
@@ -96,7 +96,7 @@ const EmployeeList = () => {
           <Col md={3} xs={6} className="mb-md-0 mb-2 ">
             <Dropdown onSelect={handleSortChange}>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Sort by{sortOption && ":" + " " + sortOption}
+                Sort by{sortOption && sortOption}
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item eventKey="name">Name</Dropdown.Item>
